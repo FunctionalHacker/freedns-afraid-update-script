@@ -1,13 +1,12 @@
 #!/bin/bash
 
 ######## EDIT THESE VARIABLES TO MATCH YOUR CONFIGURATION #########
-								  #
-domain="***YOUR DOMAIN***"					  #
-								  #
-updateurl="***YOUR UPDATE URL***"				  #
-# You can get this by going to http://freedns.afraid.org/dynamic/ #
-# and copying the "Direct URL" link				  #
-								  #
+
+domain="***YOUR DOMAIN***"
+updateurl="***YOUR UPDATE URL***"
+# You can get this by going to http://freedns.afraid.org/dynamic/
+# and copying the "Direct URL" link
+
 ###################################################################
 
 registered=$(nslookup $domain|tail -n2|grep A|sed s/[^0-9.]//g)
