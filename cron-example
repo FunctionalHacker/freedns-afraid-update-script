@@ -1,0 +1,10 @@
+# This example will run the script every five minutes
+
+# I recommend running this as a user that has no login, f.ex http
+# To edit http's crontab, run this command: sudo crontab -u http -e
+
+# Make sure that the user you run the script as, has rights to execute the script
+# You can test this by executing this command: sudo -u http bash /scripts/update.sh
+# if that doesn't return "permission denied" or a similar error, you're good to go
+
+*/5 * * * * /scripts/update.sh
