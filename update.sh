@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# You can save this file wherever you want, but in the examples, I'm assuming
+# that you have it in /scripts/update.sh
+
 ######## EDIT THESE VARIABLES TO MATCH YOUR CONFIGURATION #############################
 domain="***YOUR DOMAIN***"
 updateurl="***YOUR UPDATE URL***"
